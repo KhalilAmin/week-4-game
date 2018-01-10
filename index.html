@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Crystals Collector!</title>
 </head>
 <body>
@@ -29,15 +29,37 @@
       </div>
       <div class="row">
         <div class="col-md-3">
-          <div class="col-md-12 bg-danger">
-            <span id= "randomNumber">Tests</span>
+          <div class="col-md-4 bg-danger">
+            <span id="randomNumber"></span>
           </div>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-2 bg-warning">Scores</div>
+        <div class="col-md-2 bg-warning">
+          <div class="scoreBox">
+            <p>Wins: <div id="numberWins"></div></p>
+            <p>Losses: <div id="numberLosses"></div></p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="gems">
+      <img src="assets/images/sapphire.jpg" class=gemImage id="one" alt="Blue Gem">
+      <img src="assets/images/emerald.jpeg" class=gemImage id="two" alt="Green Gem">
+      <img src="assets/images/ruby.jpg" class=gemImage id="three" alt="Red Gem">
+      <img src="assets/images/citron.jpg" class=gemImage id="four" alt="Yellow Gem">
+    </div>
+    <div class="row">
+      <div class="col-md-4 bg-danger">
+        <p>Current number:<span id="finalTotal"></span></p>
+      </div>
+    </div>
+
   </div>
-    
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
